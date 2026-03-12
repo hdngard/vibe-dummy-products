@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 56.1%;
+  --radius: 0.5rem;
+
+  /* Products page tokens */
+  --products-accent: #3c538e;
+  --products-nav-title: #202020;
+  --products-section-title: #333333;
+  --products-col-header: #b2b3b9;
+  --products-text-primary: #161919;
+  --products-text-muted: #b2b3b9;
+  --products-search-bg: #f3f3f3;
+  --products-search-placeholder: #999999;
+
+  /* Login page tokens */
+  --login-btn: #3737FF;
+  --login-card-border: #EDEDED;
+  --login-text-primary: #232323;
+  --login-text-muted: #9c9c9c;
+  --login-text-footer: #6c6c6c;
+  --login-text-subtitle: #C8C8C8;
+  --login-divider: #EBEBEB;
+  --login-page-bg: #F2F2F5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+#root {
+  min-height: 100vh;
+}
